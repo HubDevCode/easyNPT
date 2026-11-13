@@ -1,7 +1,9 @@
 //! NetPackeT core: motore di simulazione di rete, indipendente dall'interfaccia grafica.
 
 pub mod addr;
+pub mod cli;
 pub mod device;
+pub mod hostcmd;
 pub mod packet;
 pub mod sim;
 
