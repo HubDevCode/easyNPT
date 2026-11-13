@@ -1,7 +1,10 @@
 //! NetPackeT (NPT easy) — simulatore di reti didattico.
 
 mod app;
+mod canvas;
+mod devwin;
 mod icons;
+mod side;
 
 use eframe::egui;
 
@@ -17,6 +20,12 @@ fn main() -> eframe::Result {
     let mut app = app::NptApp::new();
     if let Some(path) = std::env::args_os().nth(1) {
         app.open_path(path.into());
+    }
+    // Per i test: NPT_APRI=Router0,PC0 apre le finestre di quei dispositivi all'avvio.
+    if let Ok(list) = std::env::var("NPT_APRI") {
+        for name in list.split(',') {
+            app.open_window_by_name(name.trim());
+        }
     }
     let options = eframe::NativeOptions {
         viewport: egui::ViewportBuilder::default()

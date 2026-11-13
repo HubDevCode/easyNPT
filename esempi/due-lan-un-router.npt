@@ -1,6 +1,6 @@
 {
   "format": "netpacket",
-  "version": 1,
+  "version": 2,
   "network": {
     "devices": {
       "0": {
@@ -27,7 +27,17 @@
               "prefix": 24
             },
             "enabled": true,
-            "link": 0
+            "link": 0,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "GigabitEthernet0/1",
@@ -44,7 +54,17 @@
               "prefix": 24
             },
             "enabled": true,
-            "link": 1
+            "link": 1,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "GigabitEthernet0/2",
@@ -58,11 +78,33 @@
             ],
             "ip": null,
             "enabled": false,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           }
         ],
         "gateway": null,
-        "static_routes": []
+        "dns_server": null,
+        "static_routes": [],
+        "vlans": {},
+        "enable_secret": null,
+        "banner": null,
+        "dhcp_pools": [],
+        "dhcp_excluded": [],
+        "dhcp_leases": [],
+        "services": {
+          "dhcp": false,
+          "dns": false
+        },
+        "dns_records": []
       },
       "1": {
         "id": 1,
@@ -85,7 +127,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": 2
+            "link": 2,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/2",
@@ -99,7 +151,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": 3
+            "link": 3,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/3",
@@ -113,7 +175,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/4",
@@ -127,7 +199,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/5",
@@ -141,7 +223,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/6",
@@ -155,7 +247,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/7",
@@ -169,7 +271,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/8",
@@ -183,7 +295,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/9",
@@ -197,7 +319,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/10",
@@ -211,7 +343,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/11",
@@ -225,7 +367,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/12",
@@ -239,7 +391,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/13",
@@ -253,7 +415,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/14",
@@ -267,7 +439,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/15",
@@ -281,7 +463,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/16",
@@ -295,7 +487,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/17",
@@ -309,7 +511,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/18",
@@ -323,7 +535,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/19",
@@ -337,7 +559,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/20",
@@ -351,7 +583,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/21",
@@ -365,7 +607,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/22",
@@ -379,7 +631,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/23",
@@ -393,7 +655,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "FastEthernet0/24",
@@ -407,7 +679,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "GigabitEthernet0/1",
@@ -421,7 +703,17 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": 0
+            "link": 0,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
             "name": "GigabitEthernet0/2",
@@ -435,11 +727,63 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
+          },
+          {
+            "name": "Vlan1",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              30
+            ],
+            "ip": null,
+            "enabled": false,
+            "link": null,
+            "kind": {
+              "Svi": {
+                "vlan": 1
+              }
+            },
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           }
         ],
         "gateway": null,
-        "static_routes": []
+        "dns_server": null,
+        "static_routes": [],
+        "vlans": {
+          "1": "default"
+        },
+        "enable_secret": null,
+        "banner": null,
+        "dhcp_pools": [],
+        "dhcp_excluded": [],
+        "dhcp_leases": [],
+        "services": {
+          "dhcp": false,
+          "dns": false
+        },
+        "dns_records": []
       },
       "2": {
         "id": 2,
@@ -458,28 +802,24 @@
               0,
               0,
               0,
-              30
-            ],
-            "ip": null,
-            "enabled": true,
-            "link": 4
-          },
-          {
-            "name": "FastEthernet0/2",
-            "mac": [
-              2,
-              78,
-              0,
-              0,
-              0,
               31
             ],
             "ip": null,
             "enabled": true,
-            "link": 5
+            "link": 4,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/3",
+            "name": "FastEthernet0/2",
             "mac": [
               2,
               78,
@@ -490,10 +830,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": 5,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/4",
+            "name": "FastEthernet0/3",
             "mac": [
               2,
               78,
@@ -504,10 +854,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/5",
+            "name": "FastEthernet0/4",
             "mac": [
               2,
               78,
@@ -518,10 +878,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/6",
+            "name": "FastEthernet0/5",
             "mac": [
               2,
               78,
@@ -532,10 +902,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/7",
+            "name": "FastEthernet0/6",
             "mac": [
               2,
               78,
@@ -546,10 +926,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/8",
+            "name": "FastEthernet0/7",
             "mac": [
               2,
               78,
@@ -560,10 +950,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/9",
+            "name": "FastEthernet0/8",
             "mac": [
               2,
               78,
@@ -574,10 +974,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/10",
+            "name": "FastEthernet0/9",
             "mac": [
               2,
               78,
@@ -588,10 +998,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/11",
+            "name": "FastEthernet0/10",
             "mac": [
               2,
               78,
@@ -602,10 +1022,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/12",
+            "name": "FastEthernet0/11",
             "mac": [
               2,
               78,
@@ -616,10 +1046,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/13",
+            "name": "FastEthernet0/12",
             "mac": [
               2,
               78,
@@ -630,10 +1070,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/14",
+            "name": "FastEthernet0/13",
             "mac": [
               2,
               78,
@@ -644,10 +1094,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/15",
+            "name": "FastEthernet0/14",
             "mac": [
               2,
               78,
@@ -658,10 +1118,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/16",
+            "name": "FastEthernet0/15",
             "mac": [
               2,
               78,
@@ -672,10 +1142,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/17",
+            "name": "FastEthernet0/16",
             "mac": [
               2,
               78,
@@ -686,10 +1166,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/18",
+            "name": "FastEthernet0/17",
             "mac": [
               2,
               78,
@@ -700,10 +1190,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/19",
+            "name": "FastEthernet0/18",
             "mac": [
               2,
               78,
@@ -714,10 +1214,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/20",
+            "name": "FastEthernet0/19",
             "mac": [
               2,
               78,
@@ -728,10 +1238,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/21",
+            "name": "FastEthernet0/20",
             "mac": [
               2,
               78,
@@ -742,10 +1262,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/22",
+            "name": "FastEthernet0/21",
             "mac": [
               2,
               78,
@@ -756,10 +1286,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/23",
+            "name": "FastEthernet0/22",
             "mac": [
               2,
               78,
@@ -770,10 +1310,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "FastEthernet0/24",
+            "name": "FastEthernet0/23",
             "mac": [
               2,
               78,
@@ -784,10 +1334,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "GigabitEthernet0/1",
+            "name": "FastEthernet0/24",
             "mac": [
               2,
               78,
@@ -798,10 +1358,20 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": 1
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           },
           {
-            "name": "GigabitEthernet0/2",
+            "name": "GigabitEthernet0/1",
             "mac": [
               2,
               78,
@@ -812,11 +1382,87 @@
             ],
             "ip": null,
             "enabled": true,
-            "link": null
+            "link": 1,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
+          },
+          {
+            "name": "GigabitEthernet0/2",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              56
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
+          },
+          {
+            "name": "Vlan1",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              57
+            ],
+            "ip": null,
+            "enabled": false,
+            "link": null,
+            "kind": {
+              "Svi": {
+                "vlan": 1
+              }
+            },
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           }
         ],
         "gateway": null,
-        "static_routes": []
+        "dns_server": null,
+        "static_routes": [],
+        "vlans": {
+          "1": "default"
+        },
+        "enable_secret": null,
+        "banner": null,
+        "dhcp_pools": [],
+        "dhcp_excluded": [],
+        "dhcp_leases": [],
+        "services": {
+          "dhcp": false,
+          "dns": false
+        },
+        "dns_records": []
       },
       "3": {
         "id": 3,
@@ -835,18 +1481,40 @@
               0,
               0,
               0,
-              56
+              58
             ],
             "ip": {
               "addr": "192.168.1.10",
               "prefix": 24
             },
             "enabled": true,
-            "link": 2
+            "link": 2,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           }
         ],
         "gateway": "192.168.1.1",
-        "static_routes": []
+        "dns_server": null,
+        "static_routes": [],
+        "vlans": {},
+        "enable_secret": null,
+        "banner": null,
+        "dhcp_pools": [],
+        "dhcp_excluded": [],
+        "dhcp_leases": [],
+        "services": {
+          "dhcp": false,
+          "dns": false
+        },
+        "dns_records": []
       },
       "4": {
         "id": 4,
@@ -865,18 +1533,40 @@
               0,
               0,
               0,
-              57
+              59
             ],
             "ip": {
               "addr": "192.168.1.11",
               "prefix": 24
             },
             "enabled": true,
-            "link": 3
+            "link": 3,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           }
         ],
         "gateway": "192.168.1.1",
-        "static_routes": []
+        "dns_server": null,
+        "static_routes": [],
+        "vlans": {},
+        "enable_secret": null,
+        "banner": null,
+        "dhcp_pools": [],
+        "dhcp_excluded": [],
+        "dhcp_leases": [],
+        "services": {
+          "dhcp": false,
+          "dns": false
+        },
+        "dns_records": []
       },
       "5": {
         "id": 5,
@@ -895,18 +1585,40 @@
               0,
               0,
               0,
-              58
+              60
             ],
             "ip": {
               "addr": "192.168.2.10",
               "prefix": 24
             },
             "enabled": true,
-            "link": 4
+            "link": 4,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           }
         ],
         "gateway": "192.168.2.1",
-        "static_routes": []
+        "dns_server": null,
+        "static_routes": [],
+        "vlans": {},
+        "enable_secret": null,
+        "banner": null,
+        "dhcp_pools": [],
+        "dhcp_excluded": [],
+        "dhcp_leases": [],
+        "services": {
+          "dhcp": false,
+          "dns": false
+        },
+        "dns_records": []
       },
       "6": {
         "id": 6,
@@ -925,18 +1637,40 @@
               0,
               0,
               0,
-              59
+              61
             ],
             "ip": {
               "addr": "192.168.2.100",
               "prefix": 24
             },
             "enabled": true,
-            "link": 5
+            "link": 5,
+            "kind": "Physical",
+            "switchport": {
+              "mode": "Access",
+              "access_vlan": 1,
+              "native_vlan": 1,
+              "allowed": null
+            },
+            "description": "",
+            "dhcp_client": false,
+            "helper": null
           }
         ],
         "gateway": "192.168.2.1",
-        "static_routes": []
+        "dns_server": null,
+        "static_routes": [],
+        "vlans": {},
+        "enable_secret": null,
+        "banner": null,
+        "dhcp_pools": [],
+        "dhcp_excluded": [],
+        "dhcp_leases": [],
+        "services": {
+          "dhcp": false,
+          "dns": false
+        },
+        "dns_records": []
       }
     },
     "links": {
@@ -1013,8 +1747,9 @@
         "cable": "CopperStraight"
       }
     },
+    "notes": [],
     "next_device_id": 7,
     "next_link_id": 6,
-    "next_mac": 59
+    "next_mac": 61
   }
 }
