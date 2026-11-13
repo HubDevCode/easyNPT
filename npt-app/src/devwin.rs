@@ -260,7 +260,9 @@ impl NptApp {
             w.load(&self.net, id);
         }
         let ios_height = if d.kind.has_cli() { 90.0 } else { 0.0 };
-        let body_h = (ui.available_height() - ios_height).clamp(180.0, 520.0);
+        // Lo spazio sotto (separatore, titolo, log IOS) va tolto, altrimenti la finestra
+        // cresce a ogni frame per far stare il contenuto.
+        let body_h = (ui.available_height() - ios_height - 40.0).max(150.0);
         ui.horizontal_top(|ui| {
             // Elenco delle sezioni (colonna verticale).
             ui.vertical(|ui| {
@@ -285,7 +287,10 @@ impl NptApp {
                     }
                 });
             });
-            ui.separator();
+            // Separatore verticale ad altezza fissa: `ui.separator()` in una riga
+            // orizzontale occuperebbe tutta l'altezza e farebbe crescere la finestra.
+            let (r, _) = ui.allocate_exact_size(Vec2::new(9.0, body_h), egui::Sense::hover());
+            ui.painter().vline(r.center().x, r.y_range(), ui.visuals().widgets.noninteractive.bg_stroke);
             ui.vertical(|ui| {
                 egui::ScrollArea::vertical().id_salt(("cfgbody", id)).max_height(body_h).show(ui, |ui| {
                     match w.section {
@@ -884,10 +889,12 @@ fn console_ui(ui: &mut egui::Ui, salt: (&str, DeviceId), con: &mut Console, prom
     let bg = Color32::from_rgb(18, 22, 28);
     let fg = Color32::from_rgb(220, 226, 232);
     let font = FontId::monospace(13.0);
-    let h = (ui.available_height() - 30.0).max(120.0);
+    // Riserva lo spazio per riga di input, margini e pulsanti sotto la console:
+    // il contenuto non deve mai superare l'altezza disponibile (la finestra crescerebbe).
+    let h = (ui.available_height() - 100.0).max(100.0);
     egui::Frame::new().fill(bg).inner_margin(8.0).corner_radius(4.0).show(ui, |ui| {
         ui.set_width(ui.available_width());
-        egui::ScrollArea::both().id_salt((salt.0, salt.1, "log")).max_height(h - 40.0).stick_to_bottom(true).auto_shrink([false, false]).show(
+        egui::ScrollArea::both().id_salt((salt.0, salt.1, "log")).max_height(h).stick_to_bottom(true).auto_shrink([false, false]).show(
             ui,
             |ui| {
                 // Niente a capo automatico: le tabelle dei comandi show restano allineate.
