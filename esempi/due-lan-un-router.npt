@@ -1,0 +1,1020 @@
+{
+  "format": "netpacket",
+  "version": 1,
+  "network": {
+    "devices": {
+      "0": {
+        "id": 0,
+        "kind": "Router",
+        "name": "Router0",
+        "pos": [
+          480.0,
+          120.0
+        ],
+        "interfaces": [
+          {
+            "name": "GigabitEthernet0/0",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              1
+            ],
+            "ip": {
+              "addr": "192.168.1.1",
+              "prefix": 24
+            },
+            "enabled": true,
+            "link": 0
+          },
+          {
+            "name": "GigabitEthernet0/1",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              2
+            ],
+            "ip": {
+              "addr": "192.168.2.1",
+              "prefix": 24
+            },
+            "enabled": true,
+            "link": 1
+          },
+          {
+            "name": "GigabitEthernet0/2",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              3
+            ],
+            "ip": null,
+            "enabled": false,
+            "link": null
+          }
+        ],
+        "gateway": null,
+        "static_routes": []
+      },
+      "1": {
+        "id": 1,
+        "kind": "Switch",
+        "name": "Switch0",
+        "pos": [
+          260.0,
+          280.0
+        ],
+        "interfaces": [
+          {
+            "name": "FastEthernet0/1",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              4
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": 2
+          },
+          {
+            "name": "FastEthernet0/2",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              5
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": 3
+          },
+          {
+            "name": "FastEthernet0/3",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              6
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/4",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              7
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/5",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              8
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/6",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              9
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/7",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              10
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/8",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              11
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/9",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              12
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/10",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              13
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/11",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              14
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/12",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              15
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/13",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              16
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/14",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              17
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/15",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              18
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/16",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              19
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/17",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              20
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/18",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              21
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/19",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              22
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/20",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              23
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/21",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              24
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/22",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              25
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/23",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              26
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/24",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              27
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "GigabitEthernet0/1",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              28
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": 0
+          },
+          {
+            "name": "GigabitEthernet0/2",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              29
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          }
+        ],
+        "gateway": null,
+        "static_routes": []
+      },
+      "2": {
+        "id": 2,
+        "kind": "Switch",
+        "name": "Switch1",
+        "pos": [
+          700.0,
+          280.0
+        ],
+        "interfaces": [
+          {
+            "name": "FastEthernet0/1",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              30
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": 4
+          },
+          {
+            "name": "FastEthernet0/2",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              31
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": 5
+          },
+          {
+            "name": "FastEthernet0/3",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              32
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/4",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              33
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/5",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              34
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/6",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              35
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/7",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              36
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/8",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              37
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/9",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              38
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/10",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              39
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/11",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              40
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/12",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              41
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/13",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              42
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/14",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              43
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/15",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              44
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/16",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              45
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/17",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              46
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/18",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              47
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/19",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              48
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/20",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              49
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/21",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              50
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/22",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              51
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/23",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              52
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "FastEthernet0/24",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              53
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          },
+          {
+            "name": "GigabitEthernet0/1",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              54
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": 1
+          },
+          {
+            "name": "GigabitEthernet0/2",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              55
+            ],
+            "ip": null,
+            "enabled": true,
+            "link": null
+          }
+        ],
+        "gateway": null,
+        "static_routes": []
+      },
+      "3": {
+        "id": 3,
+        "kind": "Pc",
+        "name": "PC0",
+        "pos": [
+          140.0,
+          450.0
+        ],
+        "interfaces": [
+          {
+            "name": "FastEthernet0",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              56
+            ],
+            "ip": {
+              "addr": "192.168.1.10",
+              "prefix": 24
+            },
+            "enabled": true,
+            "link": 2
+          }
+        ],
+        "gateway": "192.168.1.1",
+        "static_routes": []
+      },
+      "4": {
+        "id": 4,
+        "kind": "Pc",
+        "name": "PC1",
+        "pos": [
+          300.0,
+          450.0
+        ],
+        "interfaces": [
+          {
+            "name": "FastEthernet0",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              57
+            ],
+            "ip": {
+              "addr": "192.168.1.11",
+              "prefix": 24
+            },
+            "enabled": true,
+            "link": 3
+          }
+        ],
+        "gateway": "192.168.1.1",
+        "static_routes": []
+      },
+      "5": {
+        "id": 5,
+        "kind": "Pc",
+        "name": "PC2",
+        "pos": [
+          620.0,
+          450.0
+        ],
+        "interfaces": [
+          {
+            "name": "FastEthernet0",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              58
+            ],
+            "ip": {
+              "addr": "192.168.2.10",
+              "prefix": 24
+            },
+            "enabled": true,
+            "link": 4
+          }
+        ],
+        "gateway": "192.168.2.1",
+        "static_routes": []
+      },
+      "6": {
+        "id": 6,
+        "kind": "Server",
+        "name": "Server0",
+        "pos": [
+          800.0,
+          450.0
+        ],
+        "interfaces": [
+          {
+            "name": "FastEthernet0",
+            "mac": [
+              2,
+              78,
+              0,
+              0,
+              0,
+              59
+            ],
+            "ip": {
+              "addr": "192.168.2.100",
+              "prefix": 24
+            },
+            "enabled": true,
+            "link": 5
+          }
+        ],
+        "gateway": "192.168.2.1",
+        "static_routes": []
+      }
+    },
+    "links": {
+      "0": {
+        "id": 0,
+        "a": {
+          "device": 0,
+          "iface": 0
+        },
+        "b": {
+          "device": 1,
+          "iface": 24
+        },
+        "cable": "CopperStraight"
+      },
+      "1": {
+        "id": 1,
+        "a": {
+          "device": 0,
+          "iface": 1
+        },
+        "b": {
+          "device": 2,
+          "iface": 24
+        },
+        "cable": "CopperStraight"
+      },
+      "2": {
+        "id": 2,
+        "a": {
+          "device": 3,
+          "iface": 0
+        },
+        "b": {
+          "device": 1,
+          "iface": 0
+        },
+        "cable": "CopperStraight"
+      },
+      "3": {
+        "id": 3,
+        "a": {
+          "device": 4,
+          "iface": 0
+        },
+        "b": {
+          "device": 1,
+          "iface": 1
+        },
+        "cable": "CopperStraight"
+      },
+      "4": {
+        "id": 4,
+        "a": {
+          "device": 5,
+          "iface": 0
+        },
+        "b": {
+          "device": 2,
+          "iface": 0
+        },
+        "cable": "CopperStraight"
+      },
+      "5": {
+        "id": 5,
+        "a": {
+          "device": 6,
+          "iface": 0
+        },
+        "b": {
+          "device": 2,
+          "iface": 1
+        },
+        "cable": "CopperStraight"
+      }
+    },
+    "next_device_id": 7,
+    "next_link_id": 6,
+    "next_mac": 59
+  }
+}
